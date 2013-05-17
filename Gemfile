@@ -21,6 +21,11 @@ group :assets do
   # gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
+
+  # Compass specific gems.
+  gem 'compass-rails'
+  gem 'oily_png'
+  gem 'susy'
 end
 
 gem 'jquery-rails', '~> 2.0.0'
