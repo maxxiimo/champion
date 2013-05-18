@@ -96,3 +96,5 @@ vendor/extensions/**/spec/dummy
 # Local
 local_env.yml
 scratch.*
+public/source
+vendor/source

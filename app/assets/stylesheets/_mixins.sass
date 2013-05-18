@@ -12,3 +12,33 @@
 @mixin reveal-hidden-inline
   display: inline-block !important
   visibility: visible
+
+
+/*  Icon Fonts
+  -----------------------
+
+@mixin data-icon
+  font-family: 'icon-fonts'
+  content: attr(data-icon)
+  speak: none
+  font-weight: normal
+  line-height: 1
+  -webkit-font-smoothing: antialiased
+
+
+/* Lists
+  -----------------------
+
+@mixin icon-nav-list($icon-font-size, $icon-padding)
+  width: auto
+  +horizontal-list
+  li
+    padding: 0 $icon-padding
+  a
+    font-size: $icon-font-size
+    // +link-colors($icon-normal, $icon-hover, $icon-active, $icon-visited, $icon-focus)
+    &:hover
+      text-decoration: none
+    span
+      // Fix for icon font clickability issue in WebKit
+      display: inline-block

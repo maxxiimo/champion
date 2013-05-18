@@ -2,6 +2,33 @@
   <h1><%= Refinery::Core.site_name %></h1>
 <% end %>
 
+<ul class="social-icons">
+  <li>
+    <%= link_to '/', :title => 'Twitter' do %>
+      <span aria-hidden="true" data-icon="&#x74;">
+      <span class="screen-reader-text">Twitter</span>
+    <% end %>
+  </li>
+  <li>
+    <%= link_to '/', :title => 'Facebook' do %>
+      <span aria-hidden="true" data-icon="&#x66;">
+      <span class="screen-reader-text">Facebook</span>
+    <% end %>
+  </li>
+  <li>
+    <%= link_to '/', :title => 'Google+' do %>
+      <span aria-hidden="true" data-icon="&#x67;">
+      <span class="screen-reader-text">Google+</span>
+    <% end %>
+  </li>
+  <li>
+    <%= link_to '/', :title => 'LinkedIn' do %>
+      <span aria-hidden="true" data-icon="&#x69;">
+      <span class="screen-reader-text">LinkedIn</span>
+    <% end %>
+  </li>
+</ul>
+
 <%= render(:partial => "/refinery/menu", :locals => {
              :dom_id => 'menu',
              :css => 'menu'
