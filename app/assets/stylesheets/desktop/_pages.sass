@@ -1,5 +1,11 @@
+#banner_content
+  position: relative
+  margin-top: -5px
+  border-bottom: 1px solid $border
+  z-index: 1
+
 .home-banner, .breakfast-banner, .lunch-banner, .snack-banner, .pack-banner, .contact-banner
-  +span-columns(6, 12)
+  +span-columns(6, 13)
   height: 239px
   .decorator
     padding: 20px
@@ -41,4 +47,6 @@
     color: $red
 
 .banner-image
-  +span-columns(6 omega, 12)
+  +span-columns(7 omega, 13)
+  #slider
+    margin-left: 18px

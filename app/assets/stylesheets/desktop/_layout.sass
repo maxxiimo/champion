@@ -16,7 +16,7 @@ body
   background-color: $bg-body
 
 .container
-  +container($total-columns, $break6, $break9, $break12)
+  +container($total-columns, $break6, $break9, $break13)
   // +susy-grid-background
 
   +at-breakpoint($break6)
@@ -25,19 +25,13 @@ body
   +at-breakpoint($break9)
     // +susy-grid-background
 
-  +at-breakpoint($break12)
+  +at-breakpoint($break13)
     // +susy-grid-background
 
   background-color: $bg-container
-  border:
-    style: solid
-    width: 1px
-    left:
-      color: $border
-    bottom:
-      color: $border
-    right:
-      color: $border
+  border-left: 1px solid $border
+  border-right: 1px solid $border
+  border-bottom: 1px solid $border
 
 img
   vertical-align: middle
@@ -50,15 +44,18 @@ img
 
 header
   +clearfix
+  position: relative
   padding: 10px 10px 5px
   background-color: $bg-header
   background: image-url("fixtures/header-bg.png") 0 0 repeat-x
+  +border-radius(5px)
+  z-index: 2
 
 [data-icon]:before
   +data-icon
 
 .logo
-  +span-columns(6, 12)
+  +span-columns(6, 13)
   display: block
   width: 250px
   height: 91px
