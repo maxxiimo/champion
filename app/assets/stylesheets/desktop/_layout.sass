@@ -26,7 +26,7 @@ body
     // +susy-grid-background
 
   +at-breakpoint($break12)
-    // +susy-grid-background
+    +susy-grid-background
 
 img
   vertical-align: middle
@@ -38,6 +38,7 @@ img
 // navigation in _navigation.sass
 
 header
+  +clearfix
   padding: 10px 10px 5px
   background-color: $bg-header
   background: image-url("fixtures/header-bg.png") 0 0 repeat-x
@@ -46,8 +47,7 @@ header
   +data-icon
 
 .logo
-  // float: left
-  // margin: .625em 0 0 0
+  +span-columns(6, 12)
   display: block
   width: 250px
   height: 91px
