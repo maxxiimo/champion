@@ -1,5 +1,6 @@
 .home-banner, .breakfast-banner, .lunch-banner, .snack-banner, .pack-banner, .contact-banner
   +span-columns(6, 12)
+  height: 239px
   .decorator
     padding: 20px
   h1
@@ -8,33 +9,34 @@
     list-style: none
 
 .home-banner
-  +background-image(linear-gradient(left, lighten($red, 45), #fff 90%))
+  // +background-image(linear-gradient(left, lighten($red, 45), #fff 90%))
+  +background-image(linear-gradient(left, #fed9e0, #fed9e0 70%, #fff 95%))
   h1
     font-size: 1.5em
     color: #ad2121
 
 .breakfast-banner
-  +background-image(linear-gradient(left, lighten($green, 65), #fff 40%))
+  +background-image(linear-gradient(left, lighten($green, 65), lighten($green, 65) 70%, #fff 95%))
   h1
     color: $green
 
 .lunch-banner
-  +background-image(linear-gradient(left, lighten($purple, 45), #fff 40%))
+  +background-image(linear-gradient(left, lighten($purple, 45), lighten($purple, 45) 70%, #fff 95%))
   h1
     color: $purple
 
 .snack-banner
-  +background-image(linear-gradient(left, lighten($orange, 45), #fff 40%))
+  +background-image(linear-gradient(left, lighten($orange, 45), lighten($orange, 45) 70%, #fff 95%))
   h1
     color: $orange
 
 .pack-banner
-  +background-image(linear-gradient(left, lighten($blue, 45), #fff 40%))
+  +background-image(linear-gradient(left, lighten($blue, 45), lighten($blue, 45) 70%, #fff 95%))
   h1
     color: $blue
 
 .contact-banner
-  +background-image(linear-gradient(left, lighten($red, 45), #fff 40%))
+  +background-image(linear-gradient(left, lighten($red, 45), lighten($red, 45) 70%, #fff 95%))
   h1
     color: $red
 
