@@ -12,4 +12,5 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require js-image-slider
 //= require_tree .
