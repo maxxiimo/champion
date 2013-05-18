@@ -4,18 +4,20 @@
   <%= render '/refinery/head' %>
   <body>
     <%= site_bar -%>
-    <%= render '/refinery/ie6check' if request.env['HTTP_USER_AGENT'] =~ /MSIE/ -%>
-    <div id="page_container">
-      <header id="header" role="banner">
-        <%= render '/refinery/header' -%>
-      </header>
-      <section id="page" role="main">
-        <%= yield %>
-      </section>
-      <footer role="footer">
-        <%= render '/refinery/footer' -%>
-      </footer>
-    </div>
+    <div class="container">
+      <%= render '/refinery/ie6check' if request.env['HTTP_USER_AGENT'] =~ /MSIE/ -%>
+      <div id="page_container">
+        <header id="header" role="banner">
+          <%= render '/refinery/header' -%>
+        </header>
+        <section id="page" role="main">
+          <%= yield %>
+        </section>
+        <footer role="footer">
+          <%= render '/refinery/footer' -%>
+        </footer>
+      </div> <!-- eof page_container -->
+    </div> <!-- eof container -->
     <%= render '/refinery/javascripts' %>
   </body>
 </html>
