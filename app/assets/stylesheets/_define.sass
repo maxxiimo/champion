@@ -36,12 +36,6 @@ $pt-sans:           "PT Sans", Helvetica, Arial, sans-serif
   src: font-url('icon-fonts.eot')
   src: font-url('icon-fonts.eot?#iefix') format("embedded-opentype"), font-url('icon-fonts.svg#icon-fonts') format("svg"), font-url('icon-fonts.woff') format("woff"), font-url('icon-fonts.ttf') format("truetype")
 
-// @font-face {
-  // font-family: 'icon-fonts'
-  // font-weight: normal
-  // font-style: normal
-  // src: url(font-path('icon-fonts.eot') + "?#iefix") format('embedded-opentype'), url(font-path('icon-fonts.woff')) format('woff'), url(font-path('icon-fonts.ttf'))  format('truetype'), url(font-path('icon-fonts.svg') + "#MyFont") format('svg')
-
 // base definitions...
 
 $base-font-family:  $droid-sans       !default
@@ -50,16 +44,16 @@ $base-line-height:  1.4               !default
 
 // header definitions...
 
-$base-header-font:  $droid-serif      !default
+$base-font-header:  $droid-serif      !default
 
 // navigation definitions...
 
-$base-nav-font:     $droid-serif      !default
+$base-font-nav:     $droid-serif      !default
 
 // non-google web fonts alternativ:
-// $base-header-font:  $arial         !default
-// $base-header-font:  $georgia       !default
-// $base-nav-font:     $georgia       !default
+// $base-font-header:  $arial         !default
+// $base-font-header:  $georgia       !default
+// $base-font-nav:     $georgia       !default
 
 // footer definitions...
 
@@ -159,7 +153,7 @@ $link-focus-blue:     $blue
 
 // borders...
 
-$border:            #c3c3c3
+$border:            #d3d3bf
 $border-nav-a:      #e6e6e6
 $border-nav-b:      #e4e4e4
 
@@ -168,17 +162,3 @@ $border-nav-b:      #e4e4e4
 $ruler:             #ddd
 $spacer:            #fff
 $highlight:         #00b5f1
-
-// alerts...
-
-$info-lgt:          #eaeff5
-$info-drk:          #33689a
-$success-lgt:       #f4f7f0
-$success-drk:       #669934
-$warning-lgt:       #ffffd9
-$warning-drk:       #cc682a
-$error-lgt:         #f9eae5
-$error-drk:         #cf3303
-
-// KEY: 1. lgt-blu, 2. drk-blu, 3. lgt-grn, 4. drk-grn,
-//      5. lgt-ylo, 6. drk-orj, 7. lgt-red, 8. drk-red
