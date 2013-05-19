@@ -1,3 +1,6 @@
+/* Banner
+  -----------------------
+
 #banner_content
   position: relative
   margin-top: -5px
@@ -6,19 +9,19 @@
 
 .home-banner, .breakfast-banner, .lunch-banner, .snack-banner, .pack-banner, .contact-banner
   +span-columns(6, 13)
-  height: 239px
+  height: 265px
+  overflow: hidden
   .decorator
     padding: 20px
   h1
     margin-top: 0
+    font-size: 1.5em
   li
     list-style: none
 
-.home-banner
-  // +background-image(linear-gradient(left, lighten($red, 45), #fff 90%))
+.home-banner, .contact-banner
   +background-image(linear-gradient(left, #fed9e0, #fed9e0 70%, #fff 95%))
   h1
-    font-size: 1.5em
     color: #ad2121
 
 .breakfast-banner
@@ -41,12 +44,8 @@
   h1
     color: $blue
 
-.contact-banner
-  +background-image(linear-gradient(left, lighten($red, 45), lighten($red, 45) 70%, #fff 95%))
-  h1
-    color: $red
-
 .banner-image
   +span-columns(7 omega, 13)
+  padding: 10px 0 15px
   #slider
     margin-left: 18px
