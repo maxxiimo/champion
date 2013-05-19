@@ -5,7 +5,7 @@ nav
   +span-columns(13 omega, 13)
   height: 48px
   text-align: center
-  // background-color: $bg-nav
+  background-color: $bg-nav
   +background-image(linear-gradient($bg-nav, white))
   border:
     style: solid
@@ -35,14 +35,8 @@ nav ul
     text-decoration: none
   .first, .last
     a
-      // +transition-property(background-position)
-      // +transition-duration (2s, 1s, 2s, 1s)
-      // +transition-timing-function(ease-in)
-      // red
       background-position: 0 -82px
       +link-colors($link-normal-red, $link-hover-red, $link-active-red, $link-visited-red, $link-focus-red)
-    // a:hover
-      // background-position: 4px -82px
   .last
     padding-right: 0
   li:nth-child(2)
