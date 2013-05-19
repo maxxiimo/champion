@@ -19,6 +19,8 @@
   li
     list-style: none
 
+// linear gradients
+
 .home-banner, .contact-banner
   +background-image(linear-gradient(left, #fed9e0, #fed9e0 70%, #fff 95%))
   h1
@@ -43,6 +45,28 @@
   +background-image(linear-gradient(left, lighten($blue, 45), lighten($blue, 45) 70%, #fff 95%))
   h1
     color: $blue
+
+// banner list
+
+.home-banner, .breakfast-banner, .lunch-banner, .snack-banner, .pack-banner, .contact-banner
+  li
+    margin-bottom: 20px
+    padding-left: 35px
+    background: image-url("icons-s1419d6b0c6.png") 0 -221px no-repeat
+
+// banner phone number
+
+.phone-number
+  display: block
+  margin: 43px 0 0 86px
+  font-size: 2em
+  font-weight: bold
+  color: $green
+  &:hover
+    text-decoration: none
+    color: lighten($green, 8)
+
+// banner images
 
 .banner-image
   +span-columns(7 omega, 13)
