@@ -42,6 +42,7 @@
   background: #eee;
   border: 1px solid #fff;
   +box-shadow(#888 0 2px 5px);
+}
 .photo-left-1deg {
   +rotate(-1deg);
 }
@@ -53,4 +54,26 @@
 }
 .photo-right-2deg {
   +rotate(2deg);
+}
+
+/* header backgrounds */
+.bg-red {
+  background-color: $red;
+  +background-image(linear-gradient(lighten($red, 20), lighten($red, 5)));
+}
+.bg-green {
+  background-color: $green;
+  +background-image(linear-gradient(lighten($green, 20), lighten($green, 5)));
+}
+.bg-purple {
+  background-color: $purple;
+  +background-image(linear-gradient(lighten($purple, 20), lighten($purple, 5)));
+}
+.bg-orange {
+  background-color: $orange;
+  +background-image(linear-gradient(lighten($orange, 20), lighten($orange, 5)));
+}
+.bg-blue {
+  background-color: $blue;
+  +background-image(linear-gradient(lighten($blue, 20), lighten($blue, 5)));
 }

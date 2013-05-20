@@ -83,7 +83,27 @@
 
 #body
   +span-columns(9, 13)
+  h2
+    padding-left: 5px
+    color: $font-white
+    +border-radius($radius)
+  .bg-red
+    background-color: $red
+    +background-image(linear-gradient(lighten($red, 20), lighten($red, 5)))
+  .bg-green
+    background-color: $green
+    +background-image(linear-gradient(lighten($green, 20), lighten($green, 5)))
+  .bg-purple
+    background-color: $purple
+    +background-image(linear-gradient(lighten($purple, 20), lighten($purple, 5)))
+  .bg-orange
+    background-color: $orange
+    +background-image(linear-gradient(lighten($orange, 20), lighten($orange, 5)))
+  .bg-blue
+    background-color: $blue
+    +background-image(linear-gradient(lighten($blue, 20), lighten($blue, 5)))
   .decorator
+    +clearfix
     padding: 0 0 20px 20px
 
 

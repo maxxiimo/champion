@@ -29,7 +29,15 @@ if (typeof(custom_wymeditor_boot_options) == "undefined") { custom_wymeditor_boo
           {name: 'left-2deg', title: 'Left 2 Degrees'},
           {name: 'right-1deg', title: 'Right 1 Degree'},
           {name: 'right-2deg', title: 'Right 2 Degrees'}
-        ], join: '-', title: 'Polaroid'}
+        ], join: '-', title: 'Polaroid'},
+      {name: 'bg',
+        rules:[
+          {name: 'red', title: 'red'},
+          {name: 'green', title: 'green'},
+          {name: 'purple', title: 'purple'},
+          {name: 'orange', title: 'orange'},
+          {name: 'blue', title: 'blue'}
+        ], join: '-', title: 'H2 Background Colors'}
     ]
   };
 }
