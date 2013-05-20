@@ -1,3 +1,43 @@
+/* Refinery
+  -----------------------
+
+/* alignment styles */
+.text-align-left
+  text-align: left
+
+.text-align-center
+  text-align: center
+
+.text-align-right
+  text-align: right
+
+.text-align-justify
+  text-align: justify
+
+
+/* block alignment styles */
+.image-align-left
+  float: left
+  margin-right: 6px
+  margin-bottom: 6px
+
+.image-align-right
+  float: right
+  margin-left: 6px
+  margin-bottom: 6px
+
+
+/* font sizes */
+.font-size-small
+  font-size: 0.75em
+
+.font-size-normal
+  font-size: 1em
+
+.font-size-large
+  font-size: 1.25em
+
+
 /* Highlighters
   -----------------------
 
@@ -83,7 +123,7 @@ hr.xlg
 .photo-left-2deg,
 .photo-right-1deg,
 .photo-right-2deg
-  margin: 0 20px 10px 10px
+  margin: 0 25px 10px 10px
   padding: 10px 10px 25px 10px
   background: #eee
   border: 1px solid #fff
@@ -104,44 +144,33 @@ hr.xlg
   // -webkit-backface-visibility:hidden
 
 
-/* Refinery
+/* Quotes
   -----------------------
 
-/* alignment styles */
-.text-align-left
-  text-align: left
+blockquote
+  position: relative
+  margin: 17px 30px 10px 15px
+  padding: 0 0 0 40px
+  font-size: 1.4em
+  font-style: italic
 
-.text-align-center
-  text-align: center
+blockquote:before
+  position: absolute
+  display: block
+  content: "\201C"
+  font-size: 100px
+  left: -25px
+  top: -24px
+  color: lighten($font-gray, 50)
 
-.text-align-right
-  text-align: right
+blockquote cite
+  display: block
+  margin-top: 5px
+  font-size: .7em
+  color: lighten($font-gray, 30)
 
-.text-align-justify
-  text-align: justify
-
-
-/* block alignment styles */
-.image-align-left
-  float: left
-  margin-right: 6px
-  margin-bottom: 6px
-
-.image-align-right
-  float: right
-  margin-left: 6px
-  margin-bottom: 6px
-
-
-/* font sizes */
-.font-size-small
-  font-size: 0.75em
-
-.font-size-normal
-  font-size: 1em
-
-.font-size-large
-  font-size: 1.25em
+blockquote cite:before
+  content: "\2014 \2009"
 
 
 /* Other
