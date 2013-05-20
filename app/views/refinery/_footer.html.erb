@@ -1,4 +1,18 @@
-<p>
-  <%= t('.copyright', :year => Time.now.year,
-                      :site_name => Refinery::Core.site_name) %>
-</p>
+<div class="column-1">
+  <h3>About Us</h3>
+  <p>Champion Foodservice is helping more and more people just like you. We provide a comprehensive line of high-quality, shelf-stable meals to meet your individual program. <%= link_to 'learn more', '/about', :title => '' %></p>
+  <%= image_tag 'slogan.png', :alt => 'Nourishing one mind at a time.', :class => 'slogan' %>
+</div>
+
+<div class="column-2">
+  <h3>Primary Links</h3>
+  <%= render(:partial => "/refinery/menu", :locals => {
+               :dom_id => 'links',
+               :css => 'links'
+             }) %>
+</div>
+
+<div class="column-3">
+  <h3>Top Links</h3>
+  <%= link_to image_tag('plate.png', :alt => ''), 'choosemyplate.com', :title => '', :class => 'plate' %>
+</div>

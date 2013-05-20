@@ -32,6 +32,16 @@ body
   border-left: 1px solid $border
   border-right: 1px solid $border
   border-bottom: 1px solid $border
+  +border-bottom-left-radius($radius)
+  +border-bottom-right-radius($radius)
+
+#middle
+  +border-radius($radius)
+  background-color: $bg-footer
+
+#bottom
+  background-color: transparent
+  border: none
 
 img
   vertical-align: middle
@@ -48,7 +58,8 @@ header
   padding: 10px 10px 5px
   background-color: $bg-header
   background: image-url("fixtures/header-bg.png") 0 0 repeat-x
-  +border-radius(5px)
+  +border-bottom-left-radius($radius)
+  +border-bottom-right-radius($radius)
   z-index: 2
 
 [data-icon]:before
@@ -68,20 +79,61 @@ header
   -----------------------
 
 footer
-  // height: 100px
-  // height: 6.25em
-  margin-top: 30px
-  ul
-    margin-bottom: 5px
-    // margin-bottom: .3125em
-    li
-      display: inline-block
-      padding: 0 10px
-      // padding: 0 .625em
-    li:first-child
-      padding-left: 0
+  margin-top: 10px
+  h3
+    margin: 10px 0
+    padding-left: 10px
+    color: $red
+    background-color: white
+    +border-radius($radius)
 
+.column-1
+  +span-columns(7, 13)
+  h3
+    margin-left: 10px
   p
-    margin-top: 0
-    font-size: 75%
-    color: $font-gray
+    margin-left: 20px
+    font-size: .85em
+  a
+    margin-left: 8px
+  .slogan
+    margin: 7px 0 0 15px
+
+.column-2
+  +span-columns(3, 13)
+  .links
+    margin-left: 10px
+    font-size: .85em
+
+.column-3
+  +span-columns(3 omega, 13)
+  h3
+    margin-right: 10px
+  .plate
+    display: block
+    width: 125px
+    height: 114px
+    margin: 15px 0 0 10px
+
+.copyright, #bottom ul
+  font-size: .7em
+  color: $font-gray
+
+.copyright
+  +span-columns(6, 13)
+  margin-top: .5em
+  margin-left: 3px
+
+#bottom ul
+  +span-columns(3 omega, 13)
+  +inline-block-list
+  margin-top: .5em
+  margin-right: 5px
+  text-align: right
+  li
+    line-height: 1
+  .first
+    padding-right: 5px
+    border-right: 1px solid $font-gray
+  .last
+    padding-left: 2px

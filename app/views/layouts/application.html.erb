@@ -4,7 +4,7 @@
   <%= render '/refinery/head' %>
   <body>
     <%= site_bar -%>
-    <div class="container">
+    <div id="top" class="container">
       <%= render '/refinery/ie6check' if request.env['HTTP_USER_AGENT'] =~ /MSIE/ -%>
       <div id="page_container">
         <header id="header" role="banner">
@@ -13,10 +13,21 @@
         <section id="page" role="main">
           <%= yield %>
         </section>
-        <footer role="footer">
-          <%= render '/refinery/footer' -%>
-        </footer>
       </div> <!-- eof page_container -->
+    </div> <!-- eof container -->
+    <div id="middle" class="container">
+      <footer role="footer">
+        <%= render '/refinery/footer' -%>
+      </footer>
+    </div> <!-- eof container -->
+    <div id="bottom" class="container">
+      <p class="copyright">Copyright &copy; 2013 Champion Foodservice</p>
+      <nav>
+        <ul>
+          <li class="first">Privacy</li>
+          <li class="last">Terms &amp; Conditions</li>
+        </ul>
+      </nav>
     </div> <!-- eof container -->
     <%= render '/refinery/javascripts' %>
   </body>
