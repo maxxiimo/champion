@@ -2,7 +2,9 @@
   <%=raw @page.content_for(:banner) %>
 </section>
 <section id="body">
-  <%=raw @page.content_for(:body) %>
+  <div class="decorator">
+    <%=raw @page.content_for(:body) %>
+  </div>
 </section>
 <!--section id="side-body">
   <%=raw @page.content_for(:side_body) %>
