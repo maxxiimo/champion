@@ -36,17 +36,20 @@
 }
 
 /* polaroids */
-.photo-left-angle {
+.photo-polaroid, .photo-left-1deg, .photo-left-2deg, .photo-right-1deg, .photo-right-2deg {
   padding: 10px 10px 25px 10px;
   background: #eee;
   border: 1px solid #fff;
   +box-shadow(#888 0 2px 5px);
+.photo-left-1deg {
+  +rotate(-1deg);
+}
+.photo-left-2deg {
   +rotate(-2deg);
 }
-.photo-right-angle {
-  padding: 10px 10px 25px 10px;
-  background: #eee;
-  border: 1px solid #fff;
-  +box-shadow(#888 0 2px 5px);
+.photo-right-1deg {
+  +rotate(1deg);
+}
+.photo-right-2deg {
   +rotate(2deg);
 }
