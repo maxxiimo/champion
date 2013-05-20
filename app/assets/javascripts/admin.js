@@ -24,11 +24,11 @@ if (typeof(custom_wymeditor_boot_options) == "undefined") { custom_wymeditor_boo
         ], join: '-', title: '{Font_Size}'},
       {name: 'photo',
         rules:[
-          {name: 'polaroid', title: '{Polaroid}'},
-          {name: 'left-1deg', title: '{Left 1 Degree}'},
-          {name: 'left-2deg', title: '{Left 2 Degrees}'},
-          {name: 'right-1deg', title: '{Right 1 Degree}'},
-          {name: 'right-2deg', title: '{Right 2 Degrees}'}
+          {name: 'polaroid', title: 'Polaroid'},
+          {name: 'left-1deg', title: 'Left 1 Degree'},
+          {name: 'left-2deg', title: 'Left 2 Degrees'},
+          {name: 'right-1deg', title: 'Right 1 Degree'},
+          {name: 'right-2deg', title: 'Right 2 Degrees'}
         ], join: '-', title: 'Polaroid'}
     ]
   };
