@@ -26,6 +26,7 @@ group :assets do
   gem 'compass-rails'
   gem 'oily_png'
   gem 'susy'
+  gem 'sassy-buttons'
 end
 
 gem 'jquery-rails', '~> 2.0.0'

@@ -1,6 +1,7 @@
 /* DEFINITIONS
   ============================================================================ */
 @import "define";
+@import "sassybuttons";
 
 // Susy Grid
 
@@ -18,6 +19,7 @@ $break13:           13;
   ============================================================================ */
 @import "compass";
 @import "susy";
+@import "sassy-buttons";
 // @import "media_queries";
 @import "mixins";
 

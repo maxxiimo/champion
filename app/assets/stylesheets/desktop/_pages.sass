@@ -83,6 +83,13 @@
 
 #body
   +span-columns(9, 13)
+  .decorator
+    +clearfix
+    padding: 0 0 20px 20px
+  p
+    padding-left: 5px
+
+#body, #news
   h2
     padding-left: 5px
     color: $font-white
@@ -92,7 +99,7 @@
     +background-image(linear-gradient(lighten($red, 20), lighten($red, 5)))
   .bg-green
     background-color: $green
-    +background-image(linear-gradient(lighten($green, 20), lighten($green, 5)))
+    +background-image(linear-gradient(lighten($green, 15), lighten($green, 2)))
   .bg-purple
     background-color: $purple
     +background-image(linear-gradient(lighten($purple, 20), lighten($purple, 5)))
@@ -102,9 +109,6 @@
   .bg-blue
     background-color: $blue
     +background-image(linear-gradient(lighten($blue, 20), lighten($blue, 5)))
-  .decorator
-    +clearfix
-    padding: 0 0 20px 20px
 
 
 /* Testimonials
@@ -119,6 +123,20 @@
 
 #news
   +span-columns(4 omega, 13)
+  h2, h3, p
+    margin-right: 20px
+  h3, p
+    padding-left: 5px
+  h2
+    margin-bottom: 15px
+  h3
+    margin-top: 10px
+    margin-bottom: 0
+    font-size: .9em
+  p
+    margin-top: 3px
+    margin-bottom: 0
+    font-size: .8em
 
 
 /* Side Body
