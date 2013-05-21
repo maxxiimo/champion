@@ -89,7 +89,7 @@
   p
     padding-left: 5px
 
-#body, #news
+#body, #news, #side_body
   h2
     padding-left: 5px
     color: $font-white
@@ -144,14 +144,39 @@
 /* Side Body
   -----------------------
 
-#side-body
-  +span-columns(4 omega, 13)
-  display: none
-
 
 /* Contact Us
   -----------------------
 
+// FIXME ccm: find override for contact us.
+
+#body
+  h2, p
+    margin-left: 20px
+  p
+    padding-left: 5px
+
+#side_body
+  +span-columns(4 omega, 13)
+  h2, p
+    margin-right: 20px
+  p
+    padding-left: 5px
+
 .no_body_content_right
   #body_content_title
     display: none
+
+#body_content_left
+  +span-columns(9, 13)
+  form
+    margin: 20px 0 40px 25px
+  .field
+    margin-bottom: 10px
+  label
+    display: inline-block
+    width: 100px
+  .actions
+    margin-left: 100px
+    input
+      +sassy-button

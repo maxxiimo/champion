@@ -14,3 +14,7 @@
 //= require jquery_ujs
 //= require js-image-slider
 //= require_tree .
+
+$('.more-button, .request-button').click(function(){
+  document.location.href='/contact';
+});
