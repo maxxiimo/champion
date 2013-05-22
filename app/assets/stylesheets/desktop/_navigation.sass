@@ -23,42 +23,52 @@
   ul
     +inline-block-list
     padding-right: 3px
-    li
-      padding-right: 5px
+  li
+    padding-right: 5px
+
+  +at-breakpoint($break9)
+    +span-columns(9 omega, 9)
     a
       display: inline-block
       line-height: 48px
-      padding-left: 32px
       vertical-align: middle
+
+  a:hover
+    text-decoration: none
+
+  +at-breakpoint($break13)
+    +span-columns(13 omega, 13)
+    a
+      padding-left: 32px
       background: image-url("icons-s1419d6b0c6.png") no-repeat
-    a:hover
-      text-decoration: none
-    .first, .last
-      a
-        background-position: 0 -82px
-        +link-colors($link-normal-red, $link-hover-red, $link-active-red, $link-visited-red, $link-focus-red)
-    .last
-      padding-right: 0
-    li:nth-child(2)
-      a
-        // green
-        background-position: 0 -171px
-        +link-colors($link-normal-green, $link-hover-green, $link-active-green, $link-visited-green, $link-focus-green)
-    li:nth-child(3)
-      a
-        // purple
-        background-position: 0 7px
-        +link-colors($link-normal-purple, $link-hover-purple, $link-active-purple, $link-visited-purple, $link-focus-purple)
-    li:nth-child(4)
-      a
-        // orange
-        background-position: 0 -126px
-        +link-colors($link-normal-orange, $link-hover-orange, $link-active-orange, $link-visited-orange, $link-focus-orange)
-    li:nth-child(5)
-      a
-        // blue
-        background-position: 0 -38px
-        +link-colors($link-normal-blue, $link-hover-blue, $link-active-blue, $link-visited-blue, $link-focus-blue)
+
+  .first, .last
+    a
+      background-position: 0 -82px
+      +link-colors($link-normal-red, $link-hover-red, $link-active-red, $link-visited-red, $link-focus-red)
+  .last
+    padding-right: 0
+
+  li:nth-child(2)
+    a
+      // green
+      background-position: 0 -171px
+      +link-colors($link-normal-green, $link-hover-green, $link-active-green, $link-visited-green, $link-focus-green)
+  li:nth-child(3)
+    a
+      // purple
+      background-position: 0 7px
+      +link-colors($link-normal-purple, $link-hover-purple, $link-active-purple, $link-visited-purple, $link-focus-purple)
+  li:nth-child(4)
+    a
+      // orange
+      background-position: 0 -126px
+      +link-colors($link-normal-orange, $link-hover-orange, $link-active-orange, $link-visited-orange, $link-focus-orange)
+  li:nth-child(5)
+    a
+      // blue
+      background-position: 0 -38px
+      +link-colors($link-normal-blue, $link-hover-blue, $link-active-blue, $link-visited-blue, $link-focus-blue)
 
 
 /* Social Nav
