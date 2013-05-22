@@ -14,6 +14,8 @@ body
   font-size: $base-font-size
   line-height: $base-line-height
   background-color: $bg-body
+  +background-image(linear-gradient(lighten($bg-body, 15), lighten($bg-body, 35)))
+  // +background-image(linear-gradient(lighten($bg-body, 30), $bg-body))
 
 .container
   +container($total-columns, $break6, $break9, $break13)
