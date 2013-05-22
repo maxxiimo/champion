@@ -90,7 +90,7 @@ footer
     +border-radius($radius)
 
 .column-1
-  +span-columns(7, 13)
+  +span-columns(6, 9)
   h3
     margin-left: 10px
   p
@@ -101,21 +101,31 @@ footer
   .slogan
     margin: 7px 0 0 15px
 
+  +at-breakpoint($break13)
+    +span-columns(7, 13)
+
 .column-2
-  +span-columns(3, 13)
+  +span-columns(3 omega, 9)
   .links
     margin-left: 10px
     font-size: .85em
 
+  +at-breakpoint($break13)
+    +span-columns(3, 13)
+
 .column-3
-  +span-columns(3 omega, 13)
-  h3
-    margin-right: 10px
-  .plate
+  display: none
+
+  +at-breakpoint($break13)
     display: block
-    width: 125px
-    height: 114px
-    margin: 15px 0 0 10px
+    +span-columns(3 omega, 13)
+    h3
+      margin-right: 10px
+    .plate
+      display: block
+      width: 125px
+      height: 114px
+      margin: 15px 0 0 10px
 
 .copyright, #bottom ul
   font-size: .7em

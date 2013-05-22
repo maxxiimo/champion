@@ -8,7 +8,7 @@
   z-index: 1
 
 .home-banner, .breakfast-banner, .lunch-banner, .snack-banner, .pack-banner, .contact-banner
-  +span-columns(6, 13)
+  +span-columns(9 omega, 9)
   height: 265px
   overflow: hidden
   .decorator
@@ -19,32 +19,43 @@
   li
     list-style: none
 
+  +at-breakpoint($break13)
+    +span-columns(6, 13)
+
 // linear gradients
 
 .home-banner, .contact-banner
-  +background-image(linear-gradient(left, #fed9e0, #fed9e0 70%, #fff 95%))
+  +background-image(linear-gradient(top, #fed9e0, #fed9e0 70%, #fff 95%))
   h1
     color: #ad2121
-
 .breakfast-banner
-  +background-image(linear-gradient(left, lighten($green, 65), lighten($green, 65) 70%, #fff 95%))
+  +background-image(linear-gradient(top, lighten($green, 65), lighten($green, 65) 70%, #fff 95%))
   h1
     color: $green
-
 .lunch-banner
-  +background-image(linear-gradient(left, lighten($purple, 45), lighten($purple, 45) 70%, #fff 95%))
+  +background-image(linear-gradient(top, lighten($purple, 45), lighten($purple, 45) 70%, #fff 95%))
   h1
     color: $purple
-
 .snack-banner
-  +background-image(linear-gradient(left, lighten($orange, 45), lighten($orange, 45) 70%, #fff 95%))
+  +background-image(linear-gradient(top, lighten($orange, 45), lighten($orange, 45) 70%, #fff 95%))
   h1
     color: $orange
-
 .pack-banner
-  +background-image(linear-gradient(left, lighten($blue, 45), lighten($blue, 45) 70%, #fff 95%))
+  +background-image(linear-gradient(top, lighten($blue, 45), lighten($blue, 45) 70%, #fff 95%))
   h1
     color: $blue
+
++at-breakpoint($break13)
+  .home-banner, .contact-banner
+    +background-image(linear-gradient(left, #fed9e0, #fed9e0 70%, #fff 95%))
+  .breakfast-banner
+    +background-image(linear-gradient(left, lighten($green, 65), lighten($green, 65) 70%, #fff 95%))
+  .lunch-banner
+    +background-image(linear-gradient(left, lighten($purple, 45), lighten($purple, 45) 70%, #fff 95%))
+  .snack-banner
+    +background-image(linear-gradient(left, lighten($orange, 45), lighten($orange, 45) 70%, #fff 95%))
+  .pack-banner
+    +background-image(linear-gradient(left, lighten($blue, 45), lighten($blue, 45) 70%, #fff 95%))
 
 // banner list
 
@@ -58,7 +69,7 @@
 
 .phone-number
   display: block
-  margin: 0 0 0 86px
+  margin: -90px 0 0 345px
   font-size: 2em
   font-weight: bold
   color: darken($green, 1)
@@ -66,14 +77,22 @@
     text-decoration: none
     color: lighten($green, 8)
 
+  +at-breakpoint($break13)
+    margin: 0 0 0 86px
+
 // banner images
 
 .banner-image, .contact-banner-image
-  +span-columns(7 omega, 13)
+  +span-columns(9 omega, 9)
   padding: 10px 0 15px
+  text-align: center
   overflow: hidden
   #slider
     margin-left: 18px
+
+  +at-breakpoint($break13)
+    +span-columns(7 omega, 13)
+    text-align: left
 
 .contact-banner-image
   padding: 15px 0 0
@@ -152,13 +171,21 @@
   #body_content_title
     display: none
   #body
+    +span-columns(9 omega, 9)
     h2, h3, p
       margin-left: 20px
     p
       padding-left: 5px
+    .inner
+      margin-right: 20px
+
+    +at-breakpoint($break13)
+      +span-columns(9, 13)
+      .inner
+        margin-right: 0
 
 #body_content_left
-  +span-columns(9, 13)
+  +span-columns(9 omega, 9)
   form
     margin: 20px 0 40px 25px
   .field
@@ -171,9 +198,25 @@
     input
       +sassy-button
 
+  +at-breakpoint($break13)
+    +span-columns(9, 13)
+
 #side_body
-  +span-columns(4 omega, 13)
+  +span-columns(9 omega, 9)
   h2, p
     margin-right: 20px
   p
     padding-left: 5px
+  .inner
+    h2
+      display: none
+    p
+      margin-left: 20px
+
+  +at-breakpoint($break13)
+    +span-columns(4 omega, 13)
+    .inner
+      h2
+        display: block
+      p
+        margin-left: 0
