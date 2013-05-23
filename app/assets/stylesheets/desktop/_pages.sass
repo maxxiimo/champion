@@ -85,17 +85,21 @@
 .banner-image, .contact-banner-image
   +span-columns(9 omega, 9)
   padding: 10px 0 15px
-  text-align: center
   overflow: hidden
   #slider
-    margin-left: 18px
+    margin: 0 auto
 
   +at-breakpoint($break13)
     +span-columns(7 omega, 13)
-    text-align: left
+    #slider
+      margin-left: 18px
 
 .contact-banner-image
   padding: 15px 0 0
+  text-align: center
+
+  +at-breakpoint($break13)
+    text-align: left
 
 
 /* Body
